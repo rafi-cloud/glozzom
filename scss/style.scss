@@ -1,0 +1,175 @@
+// Start your scss here..
+$dark-overlay:rgba(0, 0, 0, 0.7);
+$icon-size:50px;
+.navbar{
+    background-color: #000;
+    .nav-item{
+        padding-left: 1em ;
+
+    }
+}
+//carousel starts here
+.carousel-item{
+    height: 450px ;
+}
+.carousel-img-1{
+    background-image: url(../img/image1.jpeg );
+    background-size: cover;
+}
+.carousel-img-2{
+    background-image: url(../img/image2.jpeg ); 
+    background-size: cover;
+}
+.carousel-img-3{
+    background-image: url(../img/image3.jpeg );
+    background-size: cover;
+}
+// home icons
+
+#homicon{
+    .fa{
+        font-size: $icon-size;
+    }
+}
+
+//get started section
+#getstarted{
+    background-image: url(../img/bg1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    min-height: 250px;
+    .dark-overlay{
+        background:$dark-overlay;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: -48px;
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+    }
+}
+// Bootstrap 4 video starts here
+#home-video{
+    background-image: url(../img/people.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    min-height: 250px;
+    .dark-overlay{
+        background: $dark-overlay;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+        .fa{
+            font-size: $icon-size;
+        }
+    }
+}
+//photo gallary section starts here
+#photo-gallary{
+    img{
+        min-height: 250px;
+        margin-bottom: 2rem;
+    }
+}
+//################# About Us ########################
+
+#page-header{
+    background-image: url(../img/image1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 200px;
+}
+
+#we-do{
+    img{
+        height: 350px;
+        width: 350px;
+    }
+}
+#icon-boxes{
+    .fa{
+        font-size: $icon-size;
+    }
+}
+#testimonial{
+    .slick-next:before,
+    .slick-prev:before{
+        color: black;
+    }
+}
+
+//services page starts here
+
+#services-header{
+    background-image: url(../img/image3.jpeg);
+    background-attachment:fixed;
+    min-height: 200px;
+    background-size: cover;
+}
+
+
+// blog page starts here
+
+
+#blog-header{
+    background-image: url(../img/image2.jpeg);
+    background-attachment:fixed;
+    min-height: 200px;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+    .nav-item{
+        padding-left: 0 !important;
+    }
+    #getstarted{
+        min-height: 300px;
+    }
+}
+@media(max-width: 480px){
+    .carousel{
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+    #getstarted{
+        min-height: 380px;
+    }
+}
+@media(max-width:350px){
+    #getstarted{
+        min-height: 430px;
+    }
+}
+@media(min-width:575px){
+    #icon-boxes{
+        .card{
+            margin-bottom: 2rem;
+        }
+    }
+}
